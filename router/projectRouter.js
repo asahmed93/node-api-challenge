@@ -48,7 +48,7 @@ router.get('/:id', (req, res) => {
     
 })
 
-router.get('/projectActions/:id', (req, res) => {
+router.get('/projectactions/:id', (req, res) => {
     db.getProjectActions(req.params.id)
     .then(proj => {
         if(proj){
