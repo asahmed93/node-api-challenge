@@ -51,7 +51,7 @@ router.get('/:id', (req,res) => {
 //EDIT
 
 router.put('/:id', (req,res) => {
-    const {project_id, notes} = req.body;
+    const {project_id, notes, description} = req.body;
 
     if(!project_id || !notes || !description){
         res.status(400).json({ error: 'Missing required fields'})

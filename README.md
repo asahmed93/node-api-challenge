@@ -39,14 +39,22 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+    Router allows you to Route from different urls and "use" is used to make middleware
 
 - [ ] Describe Middleware?
+   functions that have access to the request object ( req ), the response object ( res ), and the next function in the application's request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
 
 - [ ] Describe a Resource?
 
+it is the URL
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+res with a status code along with the object in a JSON format
+
 - [ ] How can we partition our application into sub-applications?
+
+using nested routes.
 
 ## Minimum Viable Product
 
