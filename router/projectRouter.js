@@ -57,6 +57,9 @@ router.get('/projectActions/:id', (req, res) => {
             res.status(404).json({ error: 'ID not found'})
         }
     })
+    .catch(() => {
+        res.status(500).json({ errorMessage: 'Could not retrieve project Actions'})
+    })
 })
 
 //EDIT
